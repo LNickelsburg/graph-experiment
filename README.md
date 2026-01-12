@@ -12,7 +12,7 @@ Playing with MTA data to keep myself refreshed on graph theory.
 8. Edge impact regression
 9. Evaluate and analyze failure cases
 
-## Modeling Assumptions
+## Modeling assumptions
 
 1. Nodes are defined at the station level
 2. Trip edges connect consecutive stops along a route, and are directed
@@ -24,3 +24,22 @@ Playing with MTA data to keep myself refreshed on graph theory.
 8. The graph will provide a static snapshot of service; exact departure/arrival times will not be modeled
 9. Limitations: service disruptions, non-MTA connected services, and unofficial transfers are excluded
 10. Edge removal simulates complete service disruption; partial reduction is not modeled
+
+## Load GTFS data
+
+Download the following the "Regular GTFS" folder from [text](https://www.mta.info/developers). We will use the following files:
+
+- calendar.txt
+- routes.txt
+- stop_times.txt
+- stops.txt
+- transfers.txt
+- trips.txt
+
+## Construct stops and routes
+## Build graph w typed edges (line vs transfer edge)
+## Infer and attach transfer edges
+## Validate graph (counts, connectivity)
+## Derive graph-based features (degree, betweenness centrality, connectivity, cut-edges)
+## Edge impact regression
+## Evaluate and analyze failure cases
