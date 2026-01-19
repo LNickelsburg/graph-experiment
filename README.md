@@ -2,15 +2,6 @@
 
 Playing with MTA data to keep myself refreshed on graph theory.
 
-1. Define modeling assumptions
-2. Load GTFS data
-3. Construct stops and routes
-4. Build graph w typed edges (line vs transfer edge)
-5. Infer and attach transfer edges
-6. Validate graph (counts, connectivity)
-7. Derive graph-based features (degree, betweenness centrality, connectivity, cut-edges)
-8. Edge impact regression
-9. Evaluate and analyze failure cases
 
 ## Modeling assumptions
 
@@ -27,7 +18,7 @@ Playing with MTA data to keep myself refreshed on graph theory.
 
 ## Load GTFS data
 
-Download the following the "Regular GTFS" folder from [text](https://www.mta.info/developers). We will use the following files:
+Using the following files, from [mta.info/developers](https://www.mta.info/developers)
 
 - calendar.txt
 - routes.txt
@@ -37,6 +28,10 @@ Download the following the "Regular GTFS" folder from [text](https://www.mta.inf
 - trips.txt
 
 ## Construct stops and routes
+
+Route construction: see load_gtfs.py
+
+
 ## Build graph w typed edges (line vs transfer edge)
 ## Infer and attach transfer edges
 ## Validate graph (counts, connectivity)
